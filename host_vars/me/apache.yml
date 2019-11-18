@@ -1,0 +1,13 @@
+# group_vars/all/apache.yml
+
+apache_vhosts:
+ - servername: "{{ ansible_fqdn }}"
+   documentroot: "/var/www/html"
+   extra_parameters: |
+      Alias /adminer/ {{ adminer_directory }}
+
+      <Directory "{{ adminer_directory }}">
+         DirectoryIndex index.php
+         Require all granted
+
+      </Directory>
