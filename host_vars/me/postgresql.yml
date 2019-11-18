@@ -1,0 +1,12 @@
+postgresql_users:
+  - name: demo01
+    password: '001'
+    state: present
+  - name: demo02
+    password: '002'
+    state: present
+
+postgresql_databases:
+  - name: demo # required; the rest are optional
+    owner: demo01
+    state: present
