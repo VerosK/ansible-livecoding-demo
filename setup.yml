@@ -2,4 +2,4 @@
 - name: Setup Adminer
   hosts: all
   roles:
-    - role: geerlinguy.postgresql
+    - role: geerlingguy.postgresql
