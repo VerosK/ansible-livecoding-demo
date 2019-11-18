@@ -1,0 +1,6 @@
+
+### Ansible template
+*.retry
+
+# ignore galaxy provided roles
+roles/geerlingguy.*

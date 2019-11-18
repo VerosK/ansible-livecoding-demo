@@ -1,0 +1,6 @@
+# requirements.yml
+
+- role: geerlingguy.postgresql
+  version: 2.0.1
+
+# src: git+https://github.com/geerlingguy/ansible-role-postgresql
