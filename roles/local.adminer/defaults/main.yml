@@ -1,2 +1,7 @@
 
-adminer_directory: /opt/adminer/
+adminer_version: '4.7.4'
+adminer_directory: '/opt/adminer-{{ adminer_version }}/'
+adminer_download_url:
+  'https://github.com/vrana/adminer/releases/download/v{{ adminer_version }}/adminer-{{ adminer_version }}.php'
+
+adminer_checksum: 'sha256:b8c4e0c6f7dfd9b7a7421be17ec5d6b1259e180d5ff4b79645621ce1d5575e66'
