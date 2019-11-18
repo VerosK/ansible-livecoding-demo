@@ -1,0 +1,5 @@
+
+- name: Prepare directory
+  file:
+    path: '{{ adminer_directory }}'
+    state: directory
